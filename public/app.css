@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+body{
+    background-color: #f2f1ef;
+    font-family: Lato;
+    color:#615f62;
+}
+header{
+    margin-top:10px;   
+    text-align:center;
+}
+h1{
+    
+    font-size:4em;
+    color:#fc6b6c;
+    letter-spacing: 2;
+
+}
+h2{
+    /*margin:0 auto;*/
+    color:#ddd9d6;
+}
+#head{
+    color:#615f62;
+    font-weight: 800;
+}
+.form{
+    text-align: center;
+    /*width:70%;*/
+    margin:auto;
+    
+}
+#todoInput{
+    width:60%;
+   
+    /*margin-bottom:20px;*/
+    outline:none;
+    border:none;
+    background-color:#ddd9d6;
+    font-size:1.5em;
+    padding:10px;
+}
+.taskbtn{
+    border:none;
+    outline:none;
+    background-color:#ddd9d6;
+    border-radius:3px;
+    font-size:1.3em;
+    padding:8px 15px;
+    margin:20px;
+    color:#fc6b6c;
+}
+.list{
+    width:60%;
+    /*width:800px;*/
+    margin:20px auto;
+    cursor:pointer;
+}
+
+.task{
+    width:75%;
+    font-size:1.5em;
+    padding:1%;
+    /*height:60px;*/
+    /*line-height:60px;*/
+    margin:1%;
+}
+.task:hover span{
+    opacity:1;
+}
+li span{
+   float:right; 
+   opacity:0;
+   color:#fc6b6c;
+   transition:all 0.5s;
+}
+/*li span:hover{*/
+/*    opacity:1;*/
+/*}*/
+.task:hover{
+    background-color: #ddd9d6;
+}
+.done{
+    text-decoration:line-through;
+    color:#fc6b6c;
+    /*color:#615f62;*/
+    
+}
+@media (max-width:700px){
+    #todoInput{
+        width:70%;
+        font-size:0.9em;
+    }
+    .list{
+        width:80%;
+        font-size:0.8em;
+        
+    }
+    .task{
+        margin:2%;
+        padding:5px;
+    }
+}
